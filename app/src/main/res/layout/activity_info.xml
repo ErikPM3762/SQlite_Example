@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F1F1F1"
+    android:layout_height="match_parent"
+    tools:context=".ui.infoUser.InfoActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_info"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_person_24">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_edit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#162CED"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_edit_24">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#008107"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_save"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_save_24">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="70dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="#888888"
+                        android:text="Nombre:">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:background="#00000000"
+                        android:textSize="20dp"
+                        android:paddingStart="5dp"
+                        android:enabled="false"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:text="Erik Alberto">
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="70dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="#888888"
+                        android:text="Apellidos:">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/surname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#00000000"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:paddingStart="5dp"
+                        android:singleLine="true"
+                        android:text="Ponce Meza"
+                        android:textAllCaps="true"
+                        android:textColor="#000000"
+                        android:textSize="20dp"></EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Celular :">
+
+            </TextView>
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:enabled="false"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="#00000000"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="3328324173">
+            </EditText>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/textView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:text="Estado:"
+              android:textColor="#888888"
+              android:textSize="15dp">
+
+          </TextView>
+
+          <EditText
+              android:id="@+id/state"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:text="Jalisco"
+              android:singleLine="true"
+              android:paddingStart="5dp"
+              android:paddingEnd="5dp"
+              android:imeOptions="actionNext"
+              android:enabled="false"
+              android:textAllCaps="true"
+              android:layout_marginLeft="10dp"
+              android:textColor="#000000"
+              android:textSize="20dp">
+
+          </EditText>
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:text="Pais:"
+              android:textColor="#888888"
+              android:textSize="15dp"
+              app:layout_constraintBottom_toTopOf="@+id/state"
+              app:layout_constraintStart_toStartOf="parent">
+
+          </TextView>
+
+          <EditText
+              android:id="@+id/country"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:enabled="false"
+              android:imeOptions="actionDone"
+              android:background="#00000000"
+              android:singleLine="true"
+              android:text="Mexico"
+              android:paddingStart="5dp"
+              android:paddingEnd="5dp"
+              android:textAllCaps="true"
+              android:textColor="#000000"
+              android:textSize="20dp"
+              app:layout_constraintBottom_toBottomOf="parent">
+
+          </EditText>
+
+
+      </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_delate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#ED1616"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_delete_24">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
